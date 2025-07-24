@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #0d0d0d; /* Slightly darker for more depth */
+            color: #e0e0e0; /* Softer white for text */
+            font-family: 'Roboto Mono', monospace; /* Monospaced font for a slick look */
+            text-align: center;
+            overflow: hidden; /* Prevent scrollbar from potentially appearing */
+            position: relative; /* For absolute positioning of legal text */
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1; /* Allows content to take up available space */
+        }
+
+        .main-text {
+            font-size: 18vw; /* Slightly larger for impact */
+            font-weight: 700;
+            margin-bottom: 5px; /* Reduced margin */
+            line-height: 1;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* Subtle glow effect */
+            letter-spacing: -0.5vw; /* Tighten spacing for "No." */
+        }
+
+        .sub-text {
+            font-size: 2.2vw; /* Slightly larger for readability */
+            opacity: 0.8;
+            margin-top: 5px; /* Added margin */
+        }
+
+        .legal-notice {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.75vw; /* Very small text */
+            color: #888888; /* Greyed out */
+            font-family: Arial, sans-serif; /* Standard font for legal text */
+            width: 90%; /* Max width for readability */
+            max-width: 600px; /* Limit width on larger screens */
+            line-height: 1.4;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 1024px) {
+            .main-text {
+                font-size: 25vw;
+                letter-spacing: -0.8vw;
+            }
+            .sub-text {
+                font-size: 3vw;
+            }
+            .legal-notice {
+                font-size: 0.9vw;
+                bottom: 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-text {
+                font-size: 35vw;
+                letter-spacing: -1.2vw;
+            }
+            .sub-text {
+                font-size: 4.5vw;
+            }
+            .legal-notice {
+                font-size: 1.2vw;
+                bottom: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-text {
+                font-size: 45vw;
+                letter-spacing: -1.5vw;
+            }
+            .sub-text {
+                font-size: 6vw;
+            }
+            .legal-notice {
+                font-size: 2vw;
+                bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="main-text">No.</div>
+        <div class="sub-text">South Park is not canceled yet.</div>
+    </div>
+    <div class="legal-notice">
+        &copy; 2025 [Your Name/Company Name, e.g., OpenOps]. All rights reserved. This page is for entertainment purposes only and is not affiliated with, endorsed by, or sponsored by Comedy Central, Paramount Global, or South Park Studios. All trademarks and copyrights are the property of their respective owners.
+    </div>
+</body>
+</html>
